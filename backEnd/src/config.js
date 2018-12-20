@@ -8,7 +8,7 @@ const config = {
         env: process.env.NODE_ENV || 'development',
         root: path.join(__dirname, '..'),
         port: process.env.PORT || 9000,
-        ip: process.env.IP || '18.144.45.211',
+        ip: process.env.IP || '0.0.0.0',
         jwtSecret: "5syk8UVAFInGrOZozqg08GiWBDuTSJAH",
         mongo: {
             options: {
