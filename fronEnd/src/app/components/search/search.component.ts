@@ -3,6 +3,7 @@ import {NgxSpinnerService} from "ngx-spinner";
 import {FeatureService} from "../../services/feature.service";
 import {Router} from "@angular/router";
 import {MatPaginator, MatSort, MatTableDataSource} from "@angular/material";
+import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'app-search',
@@ -18,7 +19,7 @@ export class SearchComponent implements OnInit {
   showDropdown = false;
   responseData: any=[];
   dataSource: any = [];
-  displayedColumns: any[] = ['select', 'pid', 'mun', 'tract', 'block', 'lot'];
+  displayedColumns: any[] = ['select', 'pid', 'pun', 'mun', 'tract', 'block', 'lot'];
   length;
   showDiv = false;
 
@@ -28,7 +29,6 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
     this.spinner.show();
-
     setTimeout(() => {
       this.items = [];
       /** spinner ends after 5 seconds */

@@ -99,6 +99,7 @@ export class ApplicantComponent implements OnInit {
       + '\n' + 'Block:' + data.block
       + '\n' + 'Lot:' + data.lot
       + '\n' + 'Pun:' + data.pun
+      + '\n' + 'Unit:' + data.unit
       + '\n' + 'Parcel Source Search:' + data.Parcel_Source_Search);
   }
 

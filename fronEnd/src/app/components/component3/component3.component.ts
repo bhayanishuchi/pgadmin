@@ -23,6 +23,19 @@ export class Component3Component implements OnInit {
   showData = false;
   noData = false;
   showDiv = false;
+  /*settings = {
+    columns: {
+      id: {
+        title: 'ID'
+      },
+      name: {
+        title: 'Name'
+      },
+      age: {
+        title: 'Age'
+      }
+    }
+  };*/
 
   constructor(private spinner: NgxSpinnerService,
               private featureService: FeatureService,
@@ -32,10 +45,7 @@ export class Component3Component implements OnInit {
     this.spinner.show();
 
     setTimeout(() => {
-      this.items = ['Amsterdam', 'Antwerp', 'Athens', 'Barcelona',
-        'Berlin', 'Birmingham', 'Bradford', 'Bremen', 'Brussels', 'Bucharest',
-        'Budapest', 'Cologne', 'Copenhagen', 'Dortmund', 'Dresden', 'Dublin',
-        'Düsseldorf', 'Essen'];
+      this.items = [];
       /** spinner ends after 5 seconds */
       this.spinner.hide();
     }, 2000);

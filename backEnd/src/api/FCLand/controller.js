@@ -12,7 +12,7 @@ export const findPid = ({body, params}, res, next) => {
             console.log("not able to get connection " + err);
             res.status(400).send(err);
         } else {
-            let query = 'select pid,mun,tract,block,lot,"Parcel_Source_Search",pun from public."FCLand_Parcel"';
+            let query = 'select pid,mun,tract,block,lot,"Parcel_Source_Search",pun,unit from public."FCLand_Parcel"';
             let where = null;
             let data = [];
             if (body.mun) {
@@ -98,10 +98,10 @@ export const findPid = ({body, params}, res, next) => {
             console.log(data.indexOf(body.lot))
             if (where != null) {
                 // and tract != 'T0' and block != 'B0'
-                where += ' and pid is not null and pid != \'0\' group by pid,mun,tract,block,lot,"Parcel_Source_Search",pun order by mun desc'
+                where += ' and pid is not null and pid != \'0\' group by pid,mun,tract,block,lot,"Parcel_Source_Search",pun,unit order by mun desc'
                 query += where;
             } else {
-                where = ' where pid is not null and pid != \'0\' group by pid,mun,tract,block,lot,"Parcel_Source_Search",pun order by mun desc'
+                where = ' where pid is not null and pid != \'0\' group by pid,mun,tract,block,lot,"Parcel_Source_Search",pun,unit order by mun desc'
                 query += where;
             }
             console.log('data', data);
@@ -164,7 +164,7 @@ export const showfeatures = ({body, params}, res, next) => {
                     console.log('here', err);
                     res.status(400).send(err);
                 } else {
-                    let query2 = 'select mun,tract,block,lot,pid from public."FCLand_Parcel" where pid = $1 group by mun,tract,block,pid,lot'
+                    let query2 = 'select mun,tract,block,lot,pid,"Parcel_Source_Search",pun from public."FCLand_Parcel" where pid = $1 group by mun,tract,block,pid,lot,"Parcel_Source_Search",pun'
                     client.query(query2, [body.pid], function (err, secondResult) {
                         done(); // closing the connection;
                         if (err) {
@@ -179,6 +179,8 @@ export const showfeatures = ({body, params}, res, next) => {
                                 tract: secondResult.rows[0].tract,
                                 block: secondResult.rows[0].block,
                                 lot: secondResult.rows[0].lot,
+                                pun: secondResult.rows[0].pun,
+                                Parcel_Source_Search: secondResult.rows[0].Parcel_Source_Search,
                                 total: result.rows.length,
                                 features: result.rows
                             }

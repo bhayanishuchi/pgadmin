@@ -42,7 +42,7 @@ import { Component3Component } from './components/component3/component3.componen
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
 
   ],
   providers: [FeatureService],

@@ -21,49 +21,53 @@
         </div>
       </div>
       <div *ngIf="showDiv" class=" alert alert-danger mt-2">No Record Found.</div>
-      <div class="row mt-3" *ngIf="showDropdown">
-        <div class="col-md-12">
-          <div class="row float-right mb-2">
-            <button type="submit" class="btn btn-primary mr-1" (click)="onUpdate(selectedPID)">Update</button>
-            <button type="reset" class="btn btn-danger" (click)="onReset()">Cancel</button>
-          </div>
-          <mat-form-field class="float-left">
-            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
-          </mat-form-field>
-          <table class="table table-striped table-bordered" matSort mat-table [dataSource]="dataSource">
-            <ng-container matColumnDef="select">
-              <th mat-header-cell *matHeaderCellDef></th>
-              <td mat-cell *matCellDef="let element">
-                <mat-radio-button [checked]="isChecked" name="selectedID" (click)="onClick(element)"></mat-radio-button>
-                <!--<input type="radio" name="selectedID" [checked]="isChecked" (click)="onClick(element)"><-->
+      <div *ngIf="!showDiv">
+        <div class="row mt-3" *ngIf="showDropdown">
+          <div class="col-md-12">
+            <div class="row float-right mb-2">
+              <button type="submit" class="btn btn-primary mr-1" (click)="onUpdate(selectedPID)">Update</button>
+              <button type="reset" class="btn btn-danger" (click)="onReset()">Cancel</button>
+            </div>
+            <mat-form-field class="float-left">
+              <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+            </mat-form-field>
+            <table class="table table-striped table-bordered" matSort mat-table [dataSource]="dataSource">
+              <ng-container matColumnDef="select">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let element">
+                  <mat-radio-button [checked]="isChecked" name="selectedID"
+                                    (click)="onClick(element)"></mat-radio-button>
+                  <!--<input type="radio" name="selectedID" [checked]="isChecked" (click)="onClick(element)"><-->
                 </td>
-            </ng-container>
+              </ng-container>
 
-            <ng-container matColumnDef="pid">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header> PID </th>
-              <td mat-cell *matCellDef="let element"> {{element.pid}} </td>
-            </ng-container>
-            <ng-container matColumnDef="mun">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header> Mun </th>
-              <td mat-cell *matCellDef="let element"> {{element.mun}} </td>
-            </ng-container>
-            <ng-container matColumnDef="tract">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header> Tract </th>
-              <td mat-cell *matCellDef="let element"> {{element.tract}} </td>
-            </ng-container>
-            <ng-container matColumnDef="block">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header> Block </th>
-              <td mat-cell *matCellDef="let element"> {{element.block}} </td>
-            </ng-container>
-            <ng-container matColumnDef="lot">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header> Lot </th>
-              <td mat-cell *matCellDef="let element"> {{element.lot}} </td>
-            </ng-container>
+              <ng-container matColumnDef="pid">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> PID</th>
+                <td mat-cell *matCellDef="let element"> {{element.pid}}</td>
+              </ng-container>
+              <ng-container matColumnDef="mun">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Mun</th>
+                <td mat-cell *matCellDef="let element"> {{element.mun}}</td>
+              </ng-container>
+              <ng-container matColumnDef="tract">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Tract</th>
+                <td mat-cell *matCellDef="let element"> {{element.tract}}</td>
+              </ng-container>
+              <ng-container matColumnDef="block">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Block</th>
+                <td mat-cell *matCellDef="let element"> {{element.block}}</td>
+              </ng-container>
+              <ng-container matColumnDef="lot">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Lot</th>
+                <td mat-cell *matCellDef="let element"> {{element.lot}}</td>
+              </ng-container>
 
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-          </table>
-          <mat-paginator [pageSizeOptions]="[5, 10, 25]" [pageIndex]="0"  [pageSize]="5" [length]="length" showFirstLastButtons></mat-paginator>
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+            <mat-paginator [pageSizeOptions]="[5, 10, 25]" [pageIndex]="0" [pageSize]="5" [length]="length"
+                           showFirstLastButtons></mat-paginator>
+          </div>
         </div>
       </div>
     </div>
