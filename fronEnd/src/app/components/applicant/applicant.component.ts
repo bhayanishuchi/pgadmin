@@ -22,7 +22,9 @@ export class ApplicantComponent implements OnInit {
   displayedColumns: any[] = ['select', 'pid', 'mun', 'tract', 'block', 'lot'];
   length;
   selectedPID;
-  selected = true;
+  isSelected = false;
+  isChecked = false;
+  showDiv = false;
 
 
   constructor(private spinner: NgxSpinnerService,
@@ -52,21 +54,26 @@ export class ApplicantComponent implements OnInit {
       };
       this.featureService.getPID(pdata)
         .subscribe((res) => {
-            console.log('res',res);
-            setTimeout(() => {
-              this.dataSource = new MatTableDataSource(res.pid);
-              // this.dataSource = res.pid;
-              this.dataSource.paginator = this.paginator;
-            });
-            // this.dataSource = res.pid;
-            this.length = res.total;
-            let fdata = [];
-            for (let i = 0; i < res.total; i++) {
-              fdata.push(res.pid[i].pid);
-            }
-            this.pid = fdata;
+            console.log('res',res);if(res.total === 0) {
+            this.showDiv = true;
             this.spinner.hide();
-            this.showDropdown = true;
+          } else {
+             this.showDiv = false;
+              setTimeout(() => {
+                this.dataSource = new MatTableDataSource(res.pid);
+                // this.dataSource = res.pid;
+                this.dataSource.paginator = this.paginator;
+              });
+              // this.dataSource = res.pid;
+              this.length = res.total;
+              let fdata = [];
+              for (let i = 0; i < res.total; i++) {
+                fdata.push(res.pid[i].pid);
+              }
+              this.pid = fdata;
+              this.spinner.hide();
+              this.showDropdown = true;
+            }
           },
           error1 => {
             console.log(error1);
@@ -81,17 +88,26 @@ export class ApplicantComponent implements OnInit {
 
   onClick(event) {
     console.log('eeeee', event);
-    this.selected = event;
     this.selectedPID =  event;
   }
 
   onUpdate(data) {
     console.log('sdsss',data);
     // alert(JSON.stringify(data));
-    alert('Pid:' + data.pid + '\n' + 'Mun:' + data.mun + '\n' +'Tract:'  + data.tract + '\n' + 'Block:' + data.block + '\n' + 'Lot:' + data.lot)
+    alert('Pid:' + data.pid + '\n' + 'Mun:' + data.mun
+      + '\n' +'Tract:'  + data.tract
+      + '\n' + 'Block:' + data.block
+      + '\n' + 'Lot:' + data.lot
+      + '\n' + 'Pun:' + data.pun
+      + '\n' + 'Parcel Source Search:' + data.Parcel_Source_Search);
   }
 
   onReset() {
-    this.selected = false;
+    this.isChecked = false;
+    this.isSelected = false;
+  }
+
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }

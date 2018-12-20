@@ -59,6 +59,7 @@ export class FeatureService {
     return this.http.post<any>(environment.local + 'FCLand/', data);
   }
   getFeature(data) {
+    console.log('apiData',data);
     return this.http.post<any>(environment.local + 'FCLand/features', data);
   }
 }

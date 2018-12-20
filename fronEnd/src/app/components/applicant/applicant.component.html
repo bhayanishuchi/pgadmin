@@ -20,16 +20,23 @@
           <input type="text" name="lot" class="form-control" placeholder="Enter Lot" [(ngModel)]="features.lot">
         </div>
       </div>
+      <div *ngIf="showDiv" class=" alert alert-danger mt-2">No Record Found.</div>
       <div class="row mt-3" *ngIf="showDropdown">
         <div class="col-md-12">
           <div class="row float-right mb-2">
             <button type="submit" class="btn btn-primary mr-1" (click)="onUpdate(selectedPID)">Update</button>
             <button type="reset" class="btn btn-danger" (click)="onReset()">Cancel</button>
           </div>
+          <mat-form-field class="float-left">
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+          </mat-form-field>
           <table class="table table-striped table-bordered" matSort mat-table [dataSource]="dataSource">
             <ng-container matColumnDef="select">
               <th mat-header-cell *matHeaderCellDef></th>
-              <td mat-cell *matCellDef="let element"><input type="radio" name="selectedID" [checked]="!selected" (click)="onClick(element)"></td>
+              <td mat-cell *matCellDef="let element">
+                <mat-radio-button [checked]="isChecked" name="selectedID" (click)="onClick(element)"></mat-radio-button>
+                <!--<input type="radio" name="selectedID" [checked]="isChecked" (click)="onClick(element)"><-->
+                </td>
             </ng-container>
 
             <ng-container matColumnDef="pid">

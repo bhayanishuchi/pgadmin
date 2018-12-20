@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   local: 'http://18.144.45.211:9000/'
+   // local: 'http://0.0.0.0:9000/'
 };
 
 /*

@@ -12,7 +12,7 @@ export const findPid = ({body, params}, res, next) => {
             console.log("not able to get connection " + err);
             res.status(400).send(err);
         } else {
-            let query = 'select pid,mun,tract,block,lot from public."FCLand_Parcel"';
+            let query = 'select pid,mun,tract,block,lot,"Parcel_Source_Search",pun from public."FCLand_Parcel"';
             let where = null;
             let data = [];
             if (body.mun) {
@@ -98,7 +98,10 @@ export const findPid = ({body, params}, res, next) => {
             console.log(data.indexOf(body.lot))
             if (where != null) {
                 // and tract != 'T0' and block != 'B0'
-                where += '  group by pid,mun,tract,block,lot order by mun desc'
+                where += ' and pid is not null and pid != \'0\' group by pid,mun,tract,block,lot,"Parcel_Source_Search",pun order by mun desc'
+                query += where;
+            } else {
+                where = ' where pid is not null and pid != \'0\' group by pid,mun,tract,block,lot,"Parcel_Source_Search",pun order by mun desc'
                 query += where;
             }
             console.log('data', data);
@@ -169,6 +172,7 @@ export const showfeatures = ({body, params}, res, next) => {
                             res.status(400).send(err);
                         } else {
                             console.log('se',secondResult.rows)
+                            console.log('result',result.rows)
 
                             let final = {
                                 mun: secondResult.rows[0].mun,

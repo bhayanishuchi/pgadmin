@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgSelectModule} from "@ng-select/ng-select";
 import { NgxSpinnerModule } from 'ngx-spinner';
 import {FeatureService} from "./services/feature.service";
@@ -11,16 +11,23 @@ import {HttpClientModule} from "@angular/common/http";
 import { FeaturesComponent } from './components/features/features.component';
 import { SearchComponent } from './components/search/search.component';
 import {MatTableModule} from '@angular/material/table';
-import {MatPaginatorModule} from "@angular/material";
+import {
+  MatFormFieldModule,
+  MatInputModule,
+  MatPaginatorModule,
+  MatRadioModule
+} from "@angular/material";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ApplicantComponent} from "./components/applicant/applicant.component";
+import { Component3Component } from './components/component3/component3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeaturesComponent,
     SearchComponent,
-    ApplicantComponent
+    ApplicantComponent,
+    Component3Component
   ],
   imports: [
     BrowserModule,
@@ -31,8 +38,11 @@ import {ApplicantComponent} from "./components/applicant/applicant.component";
     NgxSpinnerModule,
     HttpClientModule,
     MatTableModule,
-    MatPaginatorModule
-
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRadioModule,
+    ReactiveFormsModule
 
   ],
   providers: [FeatureService],
