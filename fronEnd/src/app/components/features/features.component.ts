@@ -23,15 +23,16 @@ export class FeaturesComponent implements OnInit {
     console.log('pid', pid);
     this.featureService.getFeature(pid)
       .subscribe((res) => {
-          console.log('res', res);
+          console.log('underferes', res);
           if(res.total === 0) {
+            this.features = res;
             this.showData = false;
             this.spinner.hide();
           } else {
             this.showData = true;
             this.featuresData = res.features;
-
             this.features = res;
+            console.log('features', this.features);
             this.spinner.hide();
           }
 
