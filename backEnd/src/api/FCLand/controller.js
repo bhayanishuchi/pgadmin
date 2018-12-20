@@ -3,7 +3,7 @@ import {sign, verify} from "../../services/jwt";
 import {success} from "../../services/response";
 
 var pg = require("pg");
-var connectionString = "postgres://postgres:pooja@localhost:5432/test";
+var connectionString = "postgres://postgres:123456@18.144.45.211:5432/postgres";
 
 export const findPid = ({body, params}, res, next) => {
     console.log('body api', body);
@@ -12,7 +12,7 @@ export const findPid = ({body, params}, res, next) => {
             console.log("not able to get connection " + err);
             res.status(400).send(err);
         } else {
-            let query = 'select pid,mun,tract,block,lot from dbo."FCLand_Parcel"';
+            let query = 'select pid,mun,tract,block,lot from public."FCLand_Parcel"';
             let where = null;
             let data = [];
             if (body.mun) {
@@ -126,7 +126,7 @@ export const showfeatures = ({body, params}, res, next) => {
             console.log("not able to get connection " + err);
             res.status(400).send(err);
         } else {
-            let query = 'select "FeatureTypeName","Feature", "FeatureTypeID" from dbo."FCLand_parcel_features_report"';
+            let query = 'select "FeatureTypeName","Feature", "FeatureTypeID" from public."FCLand_parcel_features_report"';
             let where = null;
             let data = [];
             if (typeof(body.pid) === "object") {
@@ -161,14 +161,14 @@ export const showfeatures = ({body, params}, res, next) => {
                     console.log('here', err);
                     res.status(400).send(err);
                 } else {
-                    let query2 = 'select mun,tract,block,lot,pid from dbo."FCLand_Parcel" where pid = $1 group by mun,tract,block,pid,lot'
+                    let query2 = 'select mun,tract,block,lot,pid from public."FCLand_Parcel" where pid = $1 group by mun,tract,block,pid,lot'
                     client.query(query2, [body.pid], function (err, secondResult) {
                         done(); // closing the connection;
                         if (err) {
                             console.log('here', err);
                             res.status(400).send(err);
                         } else {
-                            //console.log('se',secondResult.rows)
+                            console.log('se',secondResult.rows)
 
                             let final = {
                                 mun: secondResult.rows[0].mun,
