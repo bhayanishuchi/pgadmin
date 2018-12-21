@@ -10,8 +10,11 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class FeaturesComponent implements OnInit {
   showData= false;
-  featuresData: any;
+  featuresData: any = [];
   features: any = [];
+  featureName;
+  feature;
+  data:any = [];
 
   constructor(private spinner: NgxSpinnerService,
               private featureService: FeatureService,
@@ -31,6 +34,7 @@ export class FeaturesComponent implements OnInit {
           } else {
             this.showData = true;
             this.featuresData = res.features;
+            this.data = res.features;
             this.features = res;
             console.log('features', this.features);
             this.spinner.hide();
@@ -42,6 +46,16 @@ export class FeaturesComponent implements OnInit {
           this.spinner.hide();
         });
 
+  }
+
+  filterData(){
+    this.featuresData = this.data;
+    if(this.featureName){
+      this.featuresData = this.featuresData.filter(x=>x.FeatureTypeName.toLowerCase().indexOf(this.featureName.toLowerCase()) > -1)
+    }
+    if(this.feature) {
+      this.featuresData = this.featuresData.filter(x => x.Feature.toLowerCase().indexOf(this.feature.toLowerCase()) > -1)
+    }
   }
 
 }

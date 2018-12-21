@@ -25,6 +25,12 @@ export class ApplicantComponent implements OnInit {
   isSelected = false;
   isChecked = false;
   showDiv = false;
+  pidSearch;
+  munSearch;
+  tractSearch;
+  blockSearch;
+  lotSearch;
+  data: any = [];
 
 
   constructor(private spinner: NgxSpinnerService,
@@ -54,6 +60,7 @@ export class ApplicantComponent implements OnInit {
       };
       this.featureService.getPID(pdata)
         .subscribe((res) => {
+            this.data = res.pid;
             console.log('res',res);if(res.total === 0) {
             this.showDiv = true;
             this.spinner.hide();
@@ -108,7 +115,17 @@ export class ApplicantComponent implements OnInit {
     this.isSelected = false;
   }
 
-  applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+  filterData() {
+    this.dataSource.data = this.data;
+    if(this.pidSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.pid.indexOf(this.pidSearch) > -1)
+    if(this.munSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.mun.indexOf(this.munSearch) > -1)
+    if(this.tractSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.tract.indexOf(this.tractSearch) > -1)
+    if(this.blockSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.block.indexOf(this.blockSearch) > -1)
+    if(this.lotSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.lot.indexOf(this.lotSearch) > -1)
   }
 }

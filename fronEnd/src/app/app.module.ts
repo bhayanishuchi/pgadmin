@@ -20,6 +20,7 @@ import {
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ApplicantComponent} from "./components/applicant/applicant.component";
 import { Component3Component } from './components/component3/component3.component';
+import { StoreComponent } from './components/store/store.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { Component3Component } from './components/component3/component3.componen
     FeaturesComponent,
     SearchComponent,
     ApplicantComponent,
-    Component3Component
+    Component3Component,
+    StoreComponent
   ],
   imports: [
     BrowserModule,

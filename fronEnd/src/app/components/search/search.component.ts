@@ -22,6 +22,13 @@ export class SearchComponent implements OnInit {
   displayedColumns: any[] = ['select', 'pid', 'pun', 'mun', 'tract', 'block', 'lot'];
   length;
   showDiv = false;
+  pidSearch;
+  punSearch;
+  munSearch;
+  tractSearch;
+  blockSearch;
+  lotSearch;
+  data: any = [];
 
   constructor(private spinner: NgxSpinnerService,
               private featureService: FeatureService,
@@ -48,25 +55,26 @@ export class SearchComponent implements OnInit {
       };
       this.featureService.getPID(pdata)
         .subscribe((res) => {
+            this.data = res.pid;
           console.log('PIDres',res);
           if(res.total === 0) {
-            this.showDiv = true;
-            this.spinner.hide();
+              this.showDiv = true;
+              this.spinner.hide();
           } else {
-            this.showDiv = false;
-            setTimeout(() => {
-              this.dataSource = new MatTableDataSource(res.pid);
-              // this.dataSource = res.pid;
-              this.dataSource.paginator = this.paginator;
-            });
-            this.length = res.total;
-            let fdata = [];
-            for (let i = 0; i < res.total; i++) {
-              fdata.push(res.pid[i].pid);
-            }
-            this.pid = fdata;
-            this.spinner.hide();
-            this.showDropdown = true;
+              this.showDiv = false;
+              setTimeout(() => {
+                this.dataSource = new MatTableDataSource(res.pid);
+                // this.dataSource = res.pid;
+                this.dataSource.paginator = this.paginator;
+              });
+              this.length = res.total;
+              let fdata = [];
+              for (let i = 0; i < res.total; i++) {
+                fdata.push(res.pid[i].pid);
+              }
+              this.pid = fdata;
+              this.spinner.hide();
+              this.showDropdown = true;
           }
           },
           error1 => {
@@ -84,7 +92,19 @@ export class SearchComponent implements OnInit {
     window.open('/feature/' + data,'_blank');
   }
 
-  applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+  filterData() {
+    this.dataSource.data = this.data;
+    if(this.pidSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.pid.indexOf(this.pidSearch) > -1)
+    if(this.punSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.pun.indexOf(this.punSearch) > -1)
+    if(this.munSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.mun.indexOf(this.munSearch) > -1)
+    if(this.tractSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.tract.indexOf(this.tractSearch) > -1)
+    if(this.blockSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.block.indexOf(this.blockSearch) > -1)
+    if(this.lotSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.lot.indexOf(this.lotSearch) > -1)
   }
 }

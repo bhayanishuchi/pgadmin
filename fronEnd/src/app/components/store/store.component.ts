@@ -1,32 +1,33 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator, MatSort, MatTableDataSource} from "@angular/material";
-import {Router} from "@angular/router";
 import {NgxSpinnerService} from "ngx-spinner";
 import {FeatureService} from "../../services/feature.service";
+import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-component3',
-  templateUrl: './component3.component.html',
-  styleUrls: ['./component3.component.css']
+  selector: 'app-store',
+  templateUrl: './store.component.html',
+  styleUrls: ['./store.component.css']
 })
-export class Component3Component implements OnInit {
+export class StoreComponent implements OnInit {
+
+  display = 'none';
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   items: any = [];
   features: any = [];
   pid: any = [];
   showDropdown = false;
-  featuresData: any=[];
   dataSource: any = [];
-  displayedColumns: any[] = ['select', 'pid', 'mun', 'tract', 'block', 'lot'];
+  displayedColumns: any[] = ['select', 'pid','pun', 'mun', 'tract', 'block', 'lot'];
   length;
-  showData = false;
-  noData = false;
   showDiv = false;
+  lot;
   pidSearch;
   munSearch;
   tractSearch;
   blockSearch;
+  punSearch;
   lotSearch;
   data: any = [];
 
@@ -36,7 +37,6 @@ export class Component3Component implements OnInit {
 
   ngOnInit() {
     this.spinner.show();
-
     setTimeout(() => {
       this.items = [];
       /** spinner ends after 5 seconds */
@@ -46,7 +46,6 @@ export class Component3Component implements OnInit {
 
   onSearch(data) {
     this.dataSource.sort = this.sort;
-
     this.spinner.show();
     if(data.mun !== undefined || data.tract !== undefined || data.block !== undefined || data.lot !== undefined) {
       let pdata = {
@@ -58,27 +57,26 @@ export class Component3Component implements OnInit {
       this.featureService.getPID(pdata)
         .subscribe((res) => {
             this.data = res.pid;
-            console.log('res',res);
-          if(res.total === 0) {
-            this.showDiv = true;
-            this.spinner.hide();
-          } else {
-            this.showDiv = false;
-            setTimeout(() => {
-              this.dataSource = new MatTableDataSource(res.pid);
-              // this.dataSource = res.pid;
-              this.dataSource.sort = this.sort;
-              this.dataSource.paginator = this.paginator;
-            });
-            this.length = res.total;
-            let fdata = [];
-            for (let i = 0; i < res.total; i++) {
-              fdata.push(res.pid[i].pid);
+            console.log('PIDres',res);
+            if(res.total === 0) {
+              this.showDiv = true;
+              this.spinner.hide();
+            } else {
+              this.showDiv = false;
+              setTimeout(() => {
+                this.dataSource = new MatTableDataSource(res.pid = res.pid.filter(x=>x.pun = x.pun.toString()));
+                // this.dataSource = res.pid;
+                this.dataSource.paginator = this.paginator;
+              });
+              this.length = res.total;
+              let fdata = [];
+              for (let i = 0; i < res.total; i++) {
+                fdata.push(res.pid[i].pid);
+              }
+              this.pid = fdata;
+              this.spinner.hide();
+              this.showDropdown = true;
             }
-            this.pid = fdata;
-            this.spinner.hide();
-            this.showDropdown = true;
-          }
           },
           error1 => {
             console.log(error1);
@@ -91,41 +89,31 @@ export class Component3Component implements OnInit {
 
   }
 
-  openModal(data) {
-    this.spinner.show();
-    console.log('data',data);
-    let pid = {
-      pid:data
-    }
-    this.featureService.getFeature(pid)
-      .subscribe((res) => {
-          console.log('res', res);
-          if(res.total === 0) {
-            this.features = res;
-            this.showData = true;
-            this.noData = false;
-            this.spinner.hide();
-          } else {
-            this.showData = true;
-            this.noData = true;
-            this.featuresData = res.features;
-            this.features = res;
-            this.spinner.hide();
-          }
-
-        },
-        error1 => {
-          console.log(error1);
-          this.spinner.hide();
-        });
+  applyFilter(filterValue: string) {
+console.log('cccccc',filterValue);
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
+  onClick(elementData) {
+    console.log('elementData', elementData);
+    this.lot = elementData.mun + ' ' + elementData.block + ' ' + elementData.tract + ' ' + elementData.lot;
+  }
+
+  openModal() {
+    this.display = 'block';
+  }
+
+  closeModal() {
+    this.display = 'none';
+  }
   filterData() {
     this.dataSource.data = this.data;
     if(this.pidSearch)
       this.dataSource.data = this.dataSource.data.filter(x => x.pid.indexOf(this.pidSearch) > -1)
     if(this.munSearch)
       this.dataSource.data = this.dataSource.data.filter(x => x.mun.indexOf(this.munSearch) > -1)
+    if(this.punSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.pun.indexOf(this.punSearch) > -1)
     if(this.tractSearch)
       this.dataSource.data = this.dataSource.data.filter(x => x.tract.indexOf(this.tractSearch) > -1)
     if(this.blockSearch)
