@@ -63,7 +63,7 @@ export class SearchComponent implements OnInit {
           } else {
               this.showDiv = false;
               setTimeout(() => {
-                this.dataSource = new MatTableDataSource(res.pid);
+                this.dataSource = new MatTableDataSource(res.pid = res.pid.filter(x=>x.pun = x.pun.toString()));
                 // this.dataSource = res.pid;
                 this.dataSource.paginator = this.paginator;
               });

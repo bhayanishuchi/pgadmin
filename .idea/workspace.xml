@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91383ce9-d1cb-4836-886e-2312badd55ef" name="Default" comment="'hostIp change'">
-      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,28 +33,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="6" />
-          <entry key="ts" value="6" />
+          <entry key="html" value="7" />
+          <entry key="ts" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="6" />
-          <entry key="TypeScript" value="6" />
+          <entry key="HTML" value="7" />
+          <entry key="TypeScript" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="708" />
-          <entry key="ts" value="1009" />
+          <entry key="html" value="711" />
+          <entry key="ts" value="1015" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="707" />
+          <entry key="HTML" value="710" />
           <entry key="JavaScript" value="1" />
-          <entry key="TypeScript" value="1009" />
+          <entry key="TypeScript" value="1015" />
         </counts>
       </usages-collector>
     </session>
@@ -60,12 +62,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts">
+        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="405">
+              <caret line="102" column="100" selection-start-line="102" selection-start-column="100" selection-end-line="102" selection-end-column="100" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="375">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
@@ -84,119 +88,26 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html">
+        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
-              <folding>
-                <element signature="n#div#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#span#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#input#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#ng-container#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#td#0;n#ng-container#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#input#0;n#td#0;n#ng-container#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#ng-container#1;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#style#0;n#input#0;n#th#0;n#ng-container#1;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#input#0;n#th#0;n#ng-container#1;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#style#0;n#input#0;n#th#0;n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#th#0;n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#input#0;n#th#0;n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#ng-container#3;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#th#0;n#ng-container#3;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#input#0;n#th#0;n#ng-container#3;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#ng-container#4;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#th#0;n#ng-container#4;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#input#0;n#th#0;n#ng-container#4;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#ng-container#5;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#th#0;n#ng-container#5;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#input#0;n#th#0;n#ng-container#5;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#mat-paginator#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="140" column="25" lean-forward="true" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/test/test.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/test/test.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#!!block;n#onSearch#0;n#Component3Component#0" />
               </folding>
             </state>
           </provider>
@@ -218,6 +129,7 @@
       <find>applyFilter</find>
       <find>mun</find>
       <find>PID</find>
+      <find>MatTableDataSource</find>
     </findStrings>
     <replaceStrings>
       <replace>public</replace>
@@ -238,8 +150,6 @@
         <option value="$PROJECT_DIR$/fronEnd/e2e/protractor.conf.js" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/services/feature.service.ts" />
         <option value="$PROJECT_DIR$/backEnd/src/config.js" />
-        <option value="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.ts" />
-        <option value="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/applicant/applicant.component.html" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/backEnd/src/api/FCLand/controller.js" />
@@ -247,12 +157,14 @@
         <option value="$PROJECT_DIR$/fronEnd/src/environments/environment.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/test/test.component.html" />
-        <option value="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.html" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html" />
+        <option value="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts" />
+        <option value="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html" />
+        <option value="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.ts" />
       </list>
     </option>
   </component>
@@ -289,6 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -335,12 +248,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="app.&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/app-routing.module.ts" />
+    <property name="SearchEverywhereHistoryKey" value="componen3&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/component3/component3.component.ts&#10;features&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/features/features.component.ts&#10;d\fea&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/services/feature.service.spec.ts&#10;component3&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/component3/component3.component.html&#10;app.&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/app-routing.module.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
@@ -423,7 +335,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39661000" />
+    <option name="totallyTimeSpent" value="40199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
@@ -441,7 +353,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.32942554" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28956625" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36576787" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.6905041" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32868218" />
@@ -472,6 +384,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -604,24 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <element signature="n#!!block;n#onSearch#0;n#Component3Component#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backEnd/src/api/FCLand/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -657,7 +561,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fronEnd/src/app/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="400">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -667,7 +571,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="925">
           <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -677,20 +581,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        <state relative-caret-position="296">
+          <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -704,21 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        <state relative-caret-position="1525">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
@@ -727,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
+        <state relative-caret-position="363">
+          <caret line="125" column="52" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
           <folding>
             <element signature="n#div#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#!!top" />
@@ -756,9 +639,8 @@
             <element signature="n#style#0;n#input#0;n#th#0;n#ng-container#1;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#input#0;n#th#0;n#ng-container#1;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
             <element signature="n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-            <element signature="n#style#0;n#input#0;n#th#0;n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
             <element signature="n#th#0;n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#style#0;n#input#0;n#th#0;n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#input#0;n#th#0;n#ng-container#2;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
             <element signature="n#ng-container#3;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
             <element signature="n#th#0;n#ng-container#3;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
@@ -770,6 +652,59 @@
             <element signature="n#th#0;n#ng-container#5;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
             <element signature="n#input#0;n#th#0;n#ng-container#5;n#table#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
             <element signature="n#mat-paginator#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/services/feature.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="102" column="100" selection-start-line="102" selection-start-column="100" selection-end-line="102" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="140" column="25" lean-forward="true" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="n#!!block;n#onSearch#0;n#Component3Component#0" />
           </folding>
         </state>
       </provider>

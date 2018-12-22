@@ -97,6 +97,11 @@
         <td>Feature</td>
       </tr>
       <div *ngIf="!noData">No data found.</div>
+      <tr *ngIf="showData">
+        <td></td>
+        <td><input type="text" style="width: 100%" placeholder="Search Feature Name" (keyup)="filterData2()" [(ngModel)]="featureName" ></td>
+        <td><input type="text" style="width: 100%" placeholder="Search Feature" (keyup)="filterData2()" [(ngModel)]="feature"></td>
+      </tr>
       <!--<div *ngIf="showData" style="width: 100%">-->
       <tr *ngFor="let fdata of featuresData">
         <td><img src="../../../assets/img/FIcon{{fdata.FeatureTypeID}}.jpg  " alt="{{fdata.FeatureTypeID}}"></td>

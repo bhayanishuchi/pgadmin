@@ -16,7 +16,7 @@ export class Component3Component implements OnInit {
   features: any = [];
   pid: any = [];
   showDropdown = false;
-  featuresData: any=[];
+  featuresData: any = [];
   dataSource: any = [];
   displayedColumns: any[] = ['select', 'pid', 'mun', 'tract', 'block', 'lot'];
   length;
@@ -29,7 +29,9 @@ export class Component3Component implements OnInit {
   blockSearch;
   lotSearch;
   data: any = [];
-
+  featureName;
+  feature;
+  data2:any = [];
   constructor(private spinner: NgxSpinnerService,
               private featureService: FeatureService,
               private router: Router) { }
@@ -109,6 +111,7 @@ export class Component3Component implements OnInit {
             this.showData = true;
             this.noData = true;
             this.featuresData = res.features;
+            this.data2 = res.features;
             this.features = res;
             this.spinner.hide();
           }
@@ -132,5 +135,14 @@ export class Component3Component implements OnInit {
       this.dataSource.data = this.dataSource.data.filter(x => x.block.indexOf(this.blockSearch) > -1)
     if(this.lotSearch)
       this.dataSource.data = this.dataSource.data.filter(x => x.lot.indexOf(this.lotSearch) > -1)
+  }
+  filterData2(){
+    this.featuresData = this.data2;
+    if(this.featureName){
+      this.featuresData = this.featuresData.filter(x=>x.FeatureTypeName.toLowerCase().indexOf(this.featureName.toLowerCase()) > -1)
+    }
+    if(this.feature) {
+      this.featuresData = this.featuresData.filter(x => x.Feature.toLowerCase().indexOf(this.feature.toLowerCase()) > -1)
+    }
   }
 }
