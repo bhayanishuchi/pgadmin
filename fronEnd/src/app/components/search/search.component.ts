@@ -19,11 +19,10 @@ export class SearchComponent implements OnInit {
   showDropdown = false;
   responseData: any=[];
   dataSource: any = [];
-  displayedColumns: any[] = ['select', 'pid', 'pun', 'mun', 'tract', 'block', 'lot'];
+  displayedColumns: any[] = ['select', 'mun', 'tract', 'block', 'lot','unit'];
   length;
   showDiv = false;
-  pidSearch;
-  punSearch;
+  unitSearch;
   munSearch;
   tractSearch;
   blockSearch;
@@ -94,10 +93,8 @@ export class SearchComponent implements OnInit {
 
   filterData() {
     this.dataSource.data = this.data;
-    if(this.pidSearch)
-      this.dataSource.data = this.dataSource.data.filter(x => x.pid.indexOf(this.pidSearch) > -1)
-    if(this.punSearch)
-      this.dataSource.data = this.dataSource.data.filter(x => x.pun.indexOf(this.punSearch) > -1)
+    if(this.unitSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.unit.indexOf(this.unitSearch) > -1)
     if(this.munSearch)
       this.dataSource.data = this.dataSource.data.filter(x => x.mun.indexOf(this.munSearch) > -1)
     if(this.tractSearch)

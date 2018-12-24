@@ -18,15 +18,15 @@ export class Component3Component implements OnInit {
   showDropdown = false;
   featuresData: any = [];
   dataSource: any = [];
-  displayedColumns: any[] = ['select', 'pid', 'mun', 'tract', 'block', 'lot'];
+  displayedColumns: any[] = ['select', 'mun', 'tract', 'block', 'lot', 'unit'];
   length;
   showData = false;
   noData = false;
   showDiv = false;
-  pidSearch;
   munSearch;
   tractSearch;
   blockSearch;
+  unitSearch;
   lotSearch;
   data: any = [];
   featureName;
@@ -125,8 +125,8 @@ export class Component3Component implements OnInit {
 
   filterData() {
     this.dataSource.data = this.data;
-    if(this.pidSearch)
-      this.dataSource.data = this.dataSource.data.filter(x => x.pid.indexOf(this.pidSearch) > -1)
+    if(this.unitSearch)
+      this.dataSource.data = this.dataSource.data.filter(x => x.unit.indexOf(this.unitSearch) > -1)
     if(this.munSearch)
       this.dataSource.data = this.dataSource.data.filter(x => x.mun.indexOf(this.munSearch) > -1)
     if(this.tractSearch)
