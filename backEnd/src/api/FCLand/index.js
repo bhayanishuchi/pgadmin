@@ -1,7 +1,7 @@
 import {Router} from 'express'
 import {schema} from './model'
 import {middleware as body} from "bodymen";
-import {findPid, showfeatures} from './controller'
+import {findPid, showfeatures, allMun} from './controller'
 
 export FCLand, {schema} from './model'
 
