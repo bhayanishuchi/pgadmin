@@ -193,3 +193,27 @@ export const showfeatures = ({body, params}, res, next) => {
         }
     })
 }
+
+export const allMun = ({}, res, next) => {
+    pg.connect(connectionString, function (err, client, done) {
+        if (err) {
+            console.log("not able to get connection " + err);
+            res.status(400).send(err);
+        } else {
+            let query = 'select distinct id,descr,code from public."Municipality"';
+            client.query(query, [], function (err, result) {
+                done(); // closing the connection;
+                if (err) {
+                    console.log('here', err);
+                    res.status(400).send(err);
+                } else {
+                    let final = {
+                        total: result.rows.length,
+                        results: result.rows
+                    }
+                    res.status(200).send(final);
+                }
+            });
+        }
+    })
+}

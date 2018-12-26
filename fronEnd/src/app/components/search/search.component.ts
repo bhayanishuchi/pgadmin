@@ -41,9 +41,13 @@ export class SearchComponent implements OnInit {
       this.spinner.hide();
     }, 2000);
   }
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
 
   onSearch(data) {
-    this.dataSource.sort = this.sort;
+   // this.dataSource.sort = this.sort;
     this.spinner.show();
     if(data.mun !== undefined || data.tract !== undefined || data.block !== undefined || data.lot !== undefined) {
       let pdata = {
@@ -65,6 +69,7 @@ export class SearchComponent implements OnInit {
                 this.dataSource = new MatTableDataSource(res.pid = res.pid.filter(x=>x.pun = x.pun.toString()));
                 // this.dataSource = res.pid;
                 this.dataSource.paginator = this.paginator;
+                this.dataSource.sort = this.sort;
               });
               this.length = res.total;
               let fdata = [];

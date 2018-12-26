@@ -24,7 +24,7 @@
         </div>
       </div>
       <div *ngIf="showDiv" class=" alert alert-danger mt-2">No Record Found.</div>
-      <div *ngIf="!showDiv">
+      <!--<div *ngIf="!showDiv">-->
         <div class="row mt-3" *ngIf="showDropdown">
           <div class="col-md-12">
             <table class="mat-elevation-z8" matSort mat-table [dataSource]="dataSource">
@@ -80,7 +80,7 @@
                            showFirstLastButtons></mat-paginator>
           </div>
         </div>
-      </div>
+      <!--</div>-->
     </div>
   </div>
 </div>

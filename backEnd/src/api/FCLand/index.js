@@ -17,4 +17,8 @@ router.post('/features',
     body({pid}),
     showfeatures)
 
+router.get('/allMun',
+    allMun)
+
+
 export default router
