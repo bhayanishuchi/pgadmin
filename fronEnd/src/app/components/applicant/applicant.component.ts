@@ -31,7 +31,7 @@ export class ApplicantComponent implements OnInit {
   blockSearch;
   lotSearch;
   data: any = [];
-
+  mun: any = [];
 
   constructor(private spinner: NgxSpinnerService,
               private featureService: FeatureService,
@@ -39,7 +39,12 @@ export class ApplicantComponent implements OnInit {
 
   ngOnInit() {
     this.spinner.show();
-
+    this.featureService.getMun().subscribe(data => {
+      if(data){
+        console.log('here' , data);
+        this.mun = data.results;
+      }
+    })
     setTimeout(() => {
       this.items = [];
       /** spinner ends after 5 seconds */

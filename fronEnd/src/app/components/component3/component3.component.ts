@@ -32,13 +32,20 @@ export class Component3Component implements OnInit {
   featureName;
   feature;
   data2:any = [];
+  mun:any = [];
+
   constructor(private spinner: NgxSpinnerService,
               private featureService: FeatureService,
               private router: Router) { }
 
   ngOnInit() {
     this.spinner.show();
-
+    this.featureService.getMun().subscribe(data => {
+      if(data){
+        console.log('here' , data);
+        this.mun = data.results;
+      }
+    })
     setTimeout(() => {
       this.items = [];
       /** spinner ends after 5 seconds */

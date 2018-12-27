@@ -38,7 +38,11 @@
               <div class="row col-md-12">
                 <div class="col-md-2">
                   <label>Mun:</label>
-                  <input type="text" name="mun" class="form-control" placeholder="Enter Mun" [(ngModel)]="features.mun">
+                  <select class="form-control" [(ngModel)]="features.mun">
+                    <option *ngFor="let m of mun" [value]="m.id">
+                      {{m.id + " - " + m.descr}}
+                    </option>
+                  </select>
                 </div>
                 <div class="col-md-2">
                   <label>Tract:</label>
