@@ -96,7 +96,7 @@ console.log('cccccc',filterValue);
 
   onClick(elementData) {
     console.log('elementData', elementData);
-    this.lot = elementData.mun + ' ' + elementData.block + ' ' + elementData.tract + ' ' + elementData.lot;
+    this.lot = elementData.Parcel_Source_Search;
   }
 
   openModal() {

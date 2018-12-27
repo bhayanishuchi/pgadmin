@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="91383ce9-d1cb-4836-886e-2312badd55ef" name="Default" comment="'hostIp change'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/src/api/FCLand/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/src/api/FCLand/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/src/api/FCLand/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/src/api/FCLand/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronEnd/src/app/services/feature.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fronEnd/src/app/services/feature.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,54 +21,54 @@
     <session id="430701332">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="4" />
+          <entry key="Angular2LanguageService" value="5" />
           <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="8" />
-          <entry key="js" value="6" />
+          <entry key="html" value="10" />
+          <entry key="js" value="8" />
           <entry key="json" value="2" />
           <entry key="md" value="1" />
-          <entry key="ts" value="14" />
+          <entry key="ts" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="8" />
+          <entry key="HTML" value="10" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="6" />
+          <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
-          <entry key="TypeScript" value="14" />
+          <entry key="TypeScript" value="17" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="711" />
-          <entry key="js" value="4" />
-          <entry key="ts" value="1029" />
+          <entry key="html" value="746" />
+          <entry key="js" value="6" />
+          <entry key="ts" value="1158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="710" />
-          <entry key="JavaScript" value="5" />
-          <entry key="TypeScript" value="1029" />
+          <entry key="HTML" value="745" />
+          <entry key="JavaScript" value="7" />
+          <entry key="TypeScript" value="1158" />
         </counts>
       </usages-collector>
     </session>
@@ -117,19 +116,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backEnd/src/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="29" selection-start-line="29" selection-end-line="30" />
+            <state relative-caret-position="475">
+              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -138,28 +128,127 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backEnd/src/config.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="112" lean-forward="true" selection-start-line="7" selection-start-column="112" selection-end-line="7" selection-end-column="112" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="11" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fronEnd/tslint.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/backEnd/src/api/FCLand/controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="196" column="19" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="19" />
+              <folding>
+                <element signature="e#283#5320#0" />
+                <element signature="e#382#5317#0" />
+                <element signature="e#401#513#0" />
+                <element signature="e#519#5311#0" />
+                <element signature="e#722#1557#0" />
+                <element signature="e#768#1176#0" />
+                <element signature="e#851#1002#0" />
+                <element signature="e#1008#1158#0" />
+                <element signature="e#1182#1543#0" />
+                <element signature="e#1224#1372#0" />
+                <element signature="e#1378#1525#0" />
+                <element signature="e#1586#2447#0" />
+                <element signature="e#1634#2054#0" />
+                <element signature="e#1717#1874#0" />
+                <element signature="e#1880#2036#0" />
+                <element signature="e#2060#2433#0" />
+                <element signature="e#2102#2256#0" />
+                <element signature="e#2262#2415#0" />
+                <element signature="e#2476#3337#0" />
+                <element signature="e#2524#2944#0" />
+                <element signature="e#2607#2764#0" />
+                <element signature="e#2770#2926#0" />
+                <element signature="e#2950#3323#0" />
+                <element signature="e#2992#3146#0" />
+                <element signature="e#3152#3305#0" />
+                <element signature="e#3364#4199#0" />
+                <element signature="e#3410#3818#0" />
+                <element signature="e#3493#3644#0" />
+                <element signature="e#3650#3800#0" />
+                <element signature="e#3824#4185#0" />
+                <element signature="e#3866#4014#0" />
+                <element signature="e#4020#4167#0" />
+                <element signature="e#4279#4529#0" />
+                <element signature="e#4535#4731#0" />
+                <element signature="e#4873#5299#0" />
+                <element signature="e#4951#5063#0" />
+                <element signature="e#5069#5285#0" />
+                <element signature="e#5103#5218#0" />
+                <element signature="e#5381#8507#0" />
+                <element signature="e#5445#8504#0" />
+                <element signature="e#5464#5576#0" />
+                <element signature="e#5582#8498#0" />
+                <element signature="e#5811#6254#0" />
+                <element signature="e#5871#6240#0" />
+                <element signature="e#5913#6071#0" />
+                <element signature="e#6077#6222#0" />
+                <element signature="e#6272#6597#0" />
+                <element signature="e#6310#6450#0" />
+                <element signature="e#6456#6583#0" />
+                <element signature="e#6630#6760#0" />
+                <element signature="e#6902#8486#0" />
+                <element signature="e#6980#7092#0" />
+                <element signature="e#7098#8472#0" />
+                <element signature="e#7378#8452#0" />
+                <element signature="e#7472#7608#0" />
+                <element signature="e#7614#8430#0" />
+                <element signature="e#7783#8347#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fronEnd/src/app/services/feature.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1575">
+              <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backEnd/src/api/FCLand/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -183,11 +272,6 @@
               <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backEnd/src/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -227,7 +311,6 @@
       <list>
         <option value="$PROJECT_DIR$/fronEnd/angular.json" />
         <option value="$PROJECT_DIR$/fronEnd/e2e/protractor.conf.js" />
-        <option value="$PROJECT_DIR$/fronEnd/src/app/services/feature.service.ts" />
         <option value="$PROJECT_DIR$/backEnd/src/config.js" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/environments/environment.ts" />
@@ -236,15 +319,16 @@
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.html" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/features/features.component.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html" />
-        <option value="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/applicant/applicant.component.ts" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/applicant/applicant.component.html" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.ts" />
-        <option value="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html" />
         <option value="$PROJECT_DIR$/backEnd/src/api/FCLand/controller.js" />
         <option value="$PROJECT_DIR$/backEnd/src/api/FCLand/index.js" />
         <option value="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts" />
+        <option value="$PROJECT_DIR$/fronEnd/src/app/services/feature.service.ts" />
+        <option value="$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html" />
+        <option value="$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts" />
       </list>
     </option>
   </component>
@@ -271,10 +355,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="76" />
-    <option name="y" value="22" />
-    <option name="width" value="1306" />
-    <option name="height" value="680" />
+    <option name="x" value="-10" />
+    <option name="width" value="1522" />
+    <option name="height" value="1952" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -289,11 +372,6 @@
             <path>
               <item name="pgadmin" type="b2602c69:ProjectViewProjectNode" />
               <item name="pgadmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pgadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pgadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="backEnd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pgadmin" type="b2602c69:ProjectViewProjectNode" />
@@ -313,6 +391,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pgadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pgadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="fronEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pgadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pgadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="fronEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pgadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pgadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="fronEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pgadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pgadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="fronEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -321,7 +430,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="store&#9;FILE&#9;file://E:/Shuchi/vincent/projects/pgadmin/fronEnd/src/app/components/store/store.component.html&#10;com&#9;FILE&#9;file://E:/Shuchi/vincent/projects/pgadmin/fronEnd/src/app/components/component3/component3.component.ts&#10;componen3&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/component3/component3.component.ts&#10;features&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/features/features.component.ts&#10;d\fea&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/services/feature.service.spec.ts&#10;component3&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/component3/component3.component.html&#10;app.&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/app-routing.module.ts" />
+    <property name="SearchEverywhereHistoryKey" value="sear&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/search/search.component.html&#10;store&#9;FILE&#9;file://E:/Shuchi/vincent/projects/pgadmin/fronEnd/src/app/components/store/store.component.html&#10;com&#9;FILE&#9;file://E:/Shuchi/vincent/projects/pgadmin/fronEnd/src/app/components/component3/component3.component.ts&#10;componen3&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/component3/component3.component.ts&#10;features&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/features/features.component.ts&#10;d\fea&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/services/feature.service.spec.ts&#10;component3&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/components/component3/component3.component.html&#10;app.&#9;FILE&#9;file://C:/Projects/Incline/Vince/pgadmin/fronEnd/src/app/app-routing.module.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
@@ -361,7 +470,8 @@
       <workItem from="1545569760750" duration="88000" />
       <workItem from="1545702159494" duration="8000" />
       <workItem from="1545821432902" duration="513000" />
-      <workItem from="1545822933933" duration="1229000" />
+      <workItem from="1545822933933" duration="4338000" />
+      <workItem from="1545901890489" duration="674000" />
     </task>
     <task id="LOCAL-00001" summary="'port change'">
       <created>1545285954315</created>
@@ -409,7 +519,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50086000" />
+    <option name="totallyTimeSpent" value="53869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,8 +532,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24102911" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24102911" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -435,7 +546,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.3282532" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.6342321" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.14888628" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.4161782" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32868218" />
@@ -529,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/services/feature.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -613,24 +717,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="110" column="37" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/component3/component3.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2525">
           <caret line="101" column="100" selection-start-line="101" selection-start-column="100" selection-end-line="101" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -660,26 +754,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html">
+    <entry file="file://$PROJECT_DIR$/backEnd/src/api/FCLand/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="2000">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backEnd/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backEnd/src/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backEnd/src/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/tslint.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/node_modules/rxjs/src/internal/Observable.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/backEnd/src/api/FCLand/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="218" column="1" selection-start-line="218" selection-start-column="1" selection-end-line="218" selection-end-column="1" />
+          <caret line="196" column="19" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="19" />
           <folding>
             <element signature="e#283#5320#0" />
             <element signature="e#382#5317#0" />
@@ -738,57 +857,26 @@
             <element signature="e#7472#7608#0" />
             <element signature="e#7614#8430#0" />
             <element signature="e#7783#8347#0" />
-            <element signature="e#8550#9347#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/services/feature.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backEnd/src/api/FCLand/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="475">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="19" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backEnd/src/api/FCLand/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2000">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backEnd/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backEnd/src/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backEnd/src/config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fronEnd/tslint.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/fronEnd/src/environments/environment.prod.ts">
       <provider selected="true" editor-type-id="text-editor" />
@@ -807,13 +895,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/search/search.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="29" selection-start-line="29" selection-end-line="30" />
+        <state relative-caret-position="475">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="112" lean-forward="true" selection-start-line="7" selection-start-column="112" selection-end-line="7" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fronEnd/src/app/components/store/store.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
         </state>
       </provider>
     </entry>
